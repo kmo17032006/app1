@@ -9,7 +9,7 @@ def index(request):
         'content': 'Main page of shop - Home',
         'list': ['first', '2', 3],
         'dict': {'first': 1, 'second': 2},
-        'bool': False
+        'bool': True
         }
     return render(request, 'main/index.html', context=context)
 
