@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static "deps/css/bootstrap/bootstrap.min.css" %}">
     <link rel="stylesheet" href="{% static "deps/css/my_css.css" %}">
-    
+
     <!-- Стиль footer-a для главной страницы -->
     {% block css %}{% endblock css %}
 
@@ -40,7 +40,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item  text-white" href="#">Доставка и оплата</a></li>
-                                <li><a class="dropdown-item  text-white" href="#">Контактная информация</a></li>
+                                <li><a class="dropdown-item  text-white" href="{% url "main:contact_info" %}">Контактная информация</a></li>
                                 <li><a class="dropdown-item  text-white" href="{% url "main:about" %}">Про нас</a></li>
                             </ul>
                         </li>
@@ -178,12 +178,12 @@
                 <div class="col-lg-2">
                     <!-- Пустой блок на Ваше усмотрение -->
                 </div>
-                <div class="col-lg-10">
 
+                <div class="col-lg-10">
                     <!-- Контент на странице -->
                     {% block content %}{% endblock content %}
-
                 </div>
+
             </div>
         </div>
     </section>
